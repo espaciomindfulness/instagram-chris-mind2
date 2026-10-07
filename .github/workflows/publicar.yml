@@ -1,0 +1,54 @@
+name: Publicar en Instagram
+
+on:
+  schedule:
+    # Corre cada 30 minutos. El script decide si hay algo que publicar
+    # segun contenido/calendario.json (hora de Argentina).
+    - cron: "*/30 * * * *"
+  workflow_dispatch:
+    inputs:
+      simulacro:
+        description: "Simulacro (no publica de verdad)"
+        type: boolean
+        default: false
+
+# Evita dos corridas pisandose entre si (doble publicacion)
+concurrency:
+  group: publicar-instagram
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  publicar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Validar calendario
+        run: python scripts/validar.py
+
+      - name: Publicar lo que corresponda
+        env:
+          IG_USER_ID: ${{ secrets.IG_USER_ID }}
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+          IG_BASE_URL: https://raw.githubusercontent.com/${{ github.repository }}/${{ github.ref_name }}/contenido/publicar
+          IG_DRY_RUN: ${{ inputs.simulacro && '1' || '0' }}
+        run: python scripts/publicar.py
+
+      - name: Guardar estado del calendario
+        if: always()
+        run: |
+          git config user.name "publicador-bot"
+          git config user.email "actions@users.noreply.github.com"
+          if ! git diff --quiet contenido/calendario.json; then
+            git add contenido/calendario.json
+            git commit -m "Actualizar estado del calendario [skip ci]"
+            git pull --rebase origin ${{ github.ref_name }}
+            git push
+          fi

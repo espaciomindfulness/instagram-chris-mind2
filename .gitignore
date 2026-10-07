@@ -1,0 +1,14 @@
+# Token temporal del refresco: NUNCA se sube al repo
+nuevo_token.txt
+
+# Restos de pruebas locales, no van al repo
+_to_delete/
+
+# Preferencias locales de Claude (rutas de esta PC), no van al repo publico
+.claude/settings.local.json
+
+# Archivos sueltos que no van al repo
+*.env
+.env
+__pycache__/
+*.pyc

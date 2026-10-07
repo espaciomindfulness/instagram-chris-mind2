@@ -1,0 +1,38 @@
+name: Probar un reel sin publicarlo
+
+# Le pide a Meta que descargue y procese un video del calendario, sin publicarlo.
+# Sirve para saber de antemano si el reel le sirve a Instagram.
+#
+# El contenedor que se crea queda sin publicar y Meta lo descarta solo a las 24 h.
+
+on:
+  workflow_dispatch:
+    inputs:
+      reel_id:
+        description: "ID del reel a probar (vacio = el primero del calendario)"
+        required: false
+        default: ""
+  # Cada vez que entra un video nuevo al repo se prueba solo. Asi un video que
+  # Meta no puede ingerir se descubre el dia que se sube y no el dia que tenia
+  # que publicarse.
+  push:
+    paths:
+      - "contenido/publicar/*.mp4"
+
+jobs:
+  probar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Crear el contenedor de prueba
+        env:
+          IG_USER_ID: ${{ secrets.IG_USER_ID }}
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+          IG_BASE_URL: https://raw.githubusercontent.com/${{ github.repository }}/${{ github.ref_name }}/contenido/publicar
+          IG_REEL_ID: ${{ inputs.reel_id }}
+        run: python scripts/probar_reel.py

@@ -1,0 +1,54 @@
+name: Refrescar token de Instagram
+
+# El token de Instagram dura 60 dias. Este workflow lo renueva todas las
+# semanas y guarda el token nuevo en el Secret IG_ACCESS_TOKEN, asi nunca
+# vence y no tenes que rehacerlo a mano.
+#
+# Necesita UN Secret extra: GH_PAT
+#   Un token de acceso personal de GitHub con permiso de escritura sobre los
+#   Secrets de este repo (ver SETUP.md, Parte F). Sin el, este workflow no
+#   puede actualizar el Secret y hay que refrescar el token a mano cada ~55 dias.
+
+on:
+  schedule:
+    # Lunes 06:00 UTC (03:00 en Argentina). Semanal: sobra para 60 dias.
+    - cron: "0 6 * * 1"
+  workflow_dispatch:
+
+concurrency:
+  group: refrescar-token-instagram
+  cancel-in-progress: false
+
+jobs:
+  refrescar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Pedir token nuevo a Instagram
+        env:
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+          IG_TOKEN_OUT: nuevo_token.txt
+        run: python scripts/refrescar_token.py
+
+      - name: Guardar el token nuevo en el Secret
+        env:
+          GH_TOKEN: ${{ secrets.GH_PAT }}
+        run: |
+          if [ -z "$GH_TOKEN" ]; then
+            echo "Falta el Secret GH_PAT: no puedo actualizar el token solo." >> "$GITHUB_STEP_SUMMARY"
+            echo "Configuralo (ver SETUP.md, Parte F) o refresca el token a mano." >> "$GITHUB_STEP_SUMMARY"
+            exit 1
+          fi
+          NUEVO="$(cat nuevo_token.txt)"
+          echo "::add-mask::$NUEVO"
+          echo "$NUEVO" | gh secret set IG_ACCESS_TOKEN --repo "$GITHUB_REPOSITORY"
+          echo "Secret IG_ACCESS_TOKEN actualizado." >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Borrar el archivo temporal
+        if: always()
+        run: rm -f nuevo_token.txt

@@ -1,0 +1,26 @@
+name: Verificar que salio publicado
+
+# Le pregunta a Instagram que hay publicado de verdad en la cuenta y lo compara
+# con contenido/calendario.json. Sirve para despejar dudas del tipo "el
+# calendario dice publicado pero en el feed no lo veo".
+#
+# No publica ni modifica nada: solo lee.
+
+on:
+  workflow_dispatch:
+
+jobs:
+  verificar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Consultar Instagram
+        env:
+          IG_USER_ID: ${{ secrets.IG_USER_ID }}
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+        run: python scripts/verificar_publicados.py

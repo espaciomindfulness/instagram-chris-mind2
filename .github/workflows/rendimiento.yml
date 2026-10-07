@@ -1,0 +1,51 @@
+name: Rendimiento por publicacion
+
+# Mide que hizo cada publicacion: alcance, guardadas, compartidas y cuantos
+# seguidores trajo. Escribe contenido/rendimiento.md y lo commitea, asi el
+# informe se lee desde el repo sin entrar a los logs.
+#
+# No publica nada en Instagram: solo lee.
+
+on:
+  schedule:
+    # Lunes 12:30 UTC = 9:30 en Buenos Aires, media hora despues del contador.
+    - cron: "30 12 * * 1"
+  workflow_dispatch:
+    inputs:
+      medios:
+        description: "Cuantas publicaciones mirar"
+        default: "20"
+  push:
+    paths:
+      - "scripts/rendimiento.py"
+      - ".github/workflows/rendimiento.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  medir:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Consultar Instagram
+        env:
+          IG_USER_ID: ${{ secrets.IG_USER_ID }}
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+          IG_MEDIOS: ${{ inputs.medios || '20' }}
+        run: python scripts/rendimiento.py
+
+      - name: Guardar el informe
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add contenido/rendimiento.md
+          git diff --cached --quiet && exit 0
+          git commit -m "Informe de rendimiento [skip ci]"
+          git pull --rebase origin main
+          git push

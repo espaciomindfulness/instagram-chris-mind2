@@ -1,0 +1,50 @@
+name: Medir seguidores
+
+# Mide si la cuenta suma o resta seguidores y guarda la foto del dia en
+# contenido/metricas.json, para que la proxima corrida tenga contra que
+# comparar. Corre sola los lunes a la manana y tambien a mano.
+#
+# No publica nada: solo lee la cuenta y escribe el historico.
+
+on:
+  schedule:
+    # Lunes 12:00 UTC = 9:00 en Buenos Aires.
+    - cron: "0 12 * * 1"
+  workflow_dispatch:
+  # Cada vez que se toca el medidor, se corre para comprobar que sigue
+  # midiendo. El bot solo commitea contenido/metricas.json, que no esta en
+  # esta lista, asi que no se dispara a si mismo.
+  push:
+    paths:
+      - "scripts/metricas.py"
+      - ".github/workflows/metricas.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  medir:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Consultar Instagram
+        env:
+          IG_USER_ID: ${{ secrets.IG_USER_ID }}
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+        run: python scripts/metricas.py
+
+      - name: Guardar la medicion
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add contenido/metricas.json
+          git diff --cached --quiet && exit 0
+          git commit -m "Medicion de seguidores [skip ci]"
+          # El bot de publicar puede haber commiteado en el medio.
+          git pull --rebase origin main
+          git push
