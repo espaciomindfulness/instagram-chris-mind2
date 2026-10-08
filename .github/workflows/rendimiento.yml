@@ -47,5 +47,12 @@ jobs:
           git add contenido/rendimiento.md
           git diff --cached --quiet && exit 0
           git commit -m "Informe de rendimiento [skip ci]"
-          git pull --rebase origin main
-          git push
+          # Otro workflow puede pushear entre el pull y el push. El que
+          # pierde la carrera reintenta en vez de quedar en rojo.
+          for intento in 1 2 3 4 5; do
+            git pull --rebase origin main || exit 1
+            git push && exit 0
+            echo "push rechazado, reintento $intento"
+            sleep $((RANDOM % 8 + 3))
+          done
+          exit 1
