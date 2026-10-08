@@ -1,6 +1,6 @@
 # Altas y bajas de la cuenta
 
-Medido el 07/10/2026 23:29.
+Medido el 07/10/2026 23:32.
 
 ## Altas y bajas de los ultimos 30 dias
 
