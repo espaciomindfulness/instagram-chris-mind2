@@ -41,8 +41,8 @@ RAIZ = Path(__file__).resolve().parent.parent
 CALENDARIO = RAIZ / "contenido" / "calendario.json"
 INFORME = RAIZ / "contenido" / "altas_bajas.md"
 GRAPH = "https://graph.instagram.com/v23.0"
-IG_USER_ID = os.environ.get("IG_USER_ID", "")
-TOKEN = os.environ.get("IG_ACCESS_TOKEN", "")
+IG_USER_ID = os.environ.get("IG_USER_ID", "").strip()
+TOKEN = os.environ.get("IG_ACCESS_TOKEN", "").strip()
 ARG = timezone(timedelta(hours=-3))
 
 

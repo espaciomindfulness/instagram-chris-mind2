@@ -40,9 +40,9 @@ CALENDARIO = RAIZ / "contenido" / "calendario.json"
 
 API_HOST = os.environ.get("IG_API_HOST", "graph.instagram.com")
 API_VERSION = os.environ.get("IG_API_VERSION", "v23.0")
-IG_USER_ID = os.environ.get("IG_USER_ID", "")
-TOKEN = os.environ.get("IG_ACCESS_TOKEN", "")
-BASE_URL = os.environ.get("IG_BASE_URL", "").rstrip("/")
+IG_USER_ID = os.environ.get("IG_USER_ID", "").strip()
+TOKEN = os.environ.get("IG_ACCESS_TOKEN", "").strip()
+BASE_URL = os.environ.get("IG_BASE_URL", "").strip().rstrip("/")
 DRY_RUN = os.environ.get("IG_DRY_RUN", "0") == "1"
 GRACIA_HORAS = int(os.environ.get("IG_GRACIA_HORAS", "36"))
 # Ventana horaria de publicacion. Un post atrasado espera a la maniana en vez

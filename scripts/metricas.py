@@ -35,8 +35,8 @@ from pathlib import Path
 RAIZ = Path(__file__).resolve().parent.parent
 HISTORICO = RAIZ / "contenido" / "metricas.json"
 GRAPH = "https://graph.instagram.com/v23.0"
-IG_USER_ID = os.environ.get("IG_USER_ID", "")
-TOKEN = os.environ.get("IG_ACCESS_TOKEN", "")
+IG_USER_ID = os.environ.get("IG_USER_ID", "").strip()
+TOKEN = os.environ.get("IG_ACCESS_TOKEN", "").strip()
 
 # Buenos Aires. Sin libreria extra: el offset es fijo todo el anio.
 ARG = timezone(timedelta(hours=-3))

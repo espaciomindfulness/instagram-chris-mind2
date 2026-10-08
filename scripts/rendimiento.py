@@ -40,8 +40,8 @@ from pathlib import Path
 RAIZ = Path(__file__).resolve().parent.parent
 INFORME = RAIZ / "contenido" / "rendimiento.md"
 GRAPH = "https://graph.instagram.com/v23.0"
-IG_USER_ID = os.environ.get("IG_USER_ID", "")
-TOKEN = os.environ.get("IG_ACCESS_TOKEN", "")
+IG_USER_ID = os.environ.get("IG_USER_ID", "").strip()
+TOKEN = os.environ.get("IG_ACCESS_TOKEN", "").strip()
 MEDIOS = int(os.environ.get("IG_MEDIOS", "20"))
 ARG = timezone(timedelta(hours=-3))
 

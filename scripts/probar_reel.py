@@ -24,7 +24,7 @@ from publicar import (  # noqa: E402
     CALENDARIO, ErrorAPI, IG_USER_ID, api, crear_contenedor, url_publica,
 )
 
-REEL_ID = os.environ.get("IG_REEL_ID", "")
+REEL_ID = os.environ.get("IG_REEL_ID", "").strip()
 
 
 def resumen(lineas: list[str]) -> None:

@@ -32,7 +32,7 @@ import urllib.parse
 import urllib.request
 
 GRAPH = "https://graph.instagram.com"
-TOKEN = os.environ.get("IG_ACCESS_TOKEN", "")
+TOKEN = os.environ.get("IG_ACCESS_TOKEN", "").strip()
 SALIDA = os.environ.get("IG_TOKEN_OUT", "nuevo_token.txt")
 
 
