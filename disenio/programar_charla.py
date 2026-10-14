@@ -13,8 +13,8 @@ seguido casi no mueve las altas (0,67 contra 0,50 por dia); lo que las mueve
 es que el contenido valga la pena guardarlo. Con tres piezas buenas alcanza
 para arrancar.
 
-Las fechas arrancan el 20/10 para dar margen al alta de la cuenta en Meta.
-Si la conexion se demora, se corren y listo.
+Las fechas se adelantaron el 13/10: la cuenta ya quedo dada de alta y el
+margen que se habia dejado para el tramite en Meta no hacia falta.
 """
 import json
 from pathlib import Path
@@ -29,7 +29,7 @@ FIRMA = ("—\n"
          "#saludmental #formacion")
 
 P = [
- ("2026-10-20", "19:00", "reel1-falta-el-mapa", "01_falta_el_mapa.mp4",
+ ("2026-10-14", "19:00", "reel1-falta-el-mapa", "01_falta_el_mapa.mp4",
   "Creo que el problema no son las técnicas. Es que nos faltó el mapa.\n\n"
   "Llega una persona con ansiedad, pero también con evitación, autocrítica y "
   "sueño roto. No entra en una sola casilla del manual.\n\n"
@@ -38,7 +38,7 @@ P = [
   "ordene, elegís por intuición o por lo último que leíste.\n\n"
   "Saber qué hacer primero, y por qué. Eso es lo que falta.\n\n"),
 
- ("2026-10-24", "19:00", "reel2-una-sola-etiqueta", "02_una_sola_etiqueta.mp4",
+ ("2026-10-20", "19:00", "reel2-una-sola-etiqueta", "02_una_sola_etiqueta.mp4",
   "Diagnóstico y después el protocolo que le corresponde.\n\n"
   "Así me formé, y es prolijo. El problema es que el paciente real casi nunca "
   "viene con una sola etiqueta: viene con varias, y se alimentan entre sí.\n\n"
@@ -49,7 +49,7 @@ P = [
   "debajo de todos los cuadros.\n\n"
   "¿Cómo lo ves vos en tu clínica? Me interesa leerlo 👇\n\n"),
 
- ("2026-10-28", "19:00", "reel3-el-caso", "03_el_caso.mp4",
+ ("2026-10-26", "19:00", "reel3-el-caso", "03_el_caso.mp4",
   "Un caso concreto, para que no quede en teoría.\n\n"
   "Consultante de cuarenta años, llega por ansiedad. Si te quedás en la "
   "etiqueta, le das técnicas de relajación y listo.\n\n"
