@@ -30,6 +30,9 @@ CAPTION = (
  "📅 Martes 27 de octubre · 20:30\n"
  "💻 Por Zoom · 1 hora · gratis\n\n"
  "El link para anotarte está en mi bio. Los cupos son limitados.\n\n"
+ # Pedir la etiqueta explicitamente: es lo que hizo viajar al aviso de
+ # busqueda laboral (+115 seguidores en cuatro dias).
+ "Si pensás en algún colega al que le pueda servir, etiquetalo acá abajo.\n\n"
  "—\n"
  "Christian Arpa · Psicólogo (UBA) · MBSR Teacher (GMC)\n"
  "Dirijo el Diplomado en Psicoterapia Basada en Procesos.\n\n"
