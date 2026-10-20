@@ -27,12 +27,14 @@
     {
       "id": "reel2-una-sola-etiqueta",
       "tipo": "reel",
-      "estado": "pendiente",
+      "estado": "publicado",
       "fecha": "2026-10-20",
       "hora": "19:00",
       "archivo": "02_una_sola_etiqueta.mp4",
       "compartir_en_feed": true,
-      "caption": "Diagnóstico y después el protocolo que le corresponde.\n\nAsí me formé, y es prolijo. El problema es que el paciente real casi nunca viene con una sola etiqueta: viene con varias, y se alimentan entre sí.\n\nPor eso la disciplina se está moviendo hacia los procesos. En vez de preguntarte qué trastorno tiene, preguntás qué procesos sostienen su sufrimiento y cuáles podés activar para que esté mejor.\n\nDejás de tratar etiquetas y trabajás los mecanismos de cambio que están debajo de todos los cuadros.\n\n¿Cómo lo ves vos en tu clínica? Me interesa leerlo 👇\n\n—\nChristian Arpa · Psicólogo (UBA) · MBSR Teacher (GMC)\nDirijo el Diplomado en Psicoterapia Basada en Procesos.\n\n#psicologia #act #mindfulness #psicoterapia #clinica #saludmental #formacion"
+      "caption": "Diagnóstico y después el protocolo que le corresponde.\n\nAsí me formé, y es prolijo. El problema es que el paciente real casi nunca viene con una sola etiqueta: viene con varias, y se alimentan entre sí.\n\nPor eso la disciplina se está moviendo hacia los procesos. En vez de preguntarte qué trastorno tiene, preguntás qué procesos sostienen su sufrimiento y cuáles podés activar para que esté mejor.\n\nDejás de tratar etiquetas y trabajás los mecanismos de cambio que están debajo de todos los cuadros.\n\n¿Cómo lo ves vos en tu clínica? Me interesa leerlo 👇\n\n—\nChristian Arpa · Psicólogo (UBA) · MBSR Teacher (GMC)\nDirijo el Diplomado en Psicoterapia Basada en Procesos.\n\n#psicologia #act #mindfulness #psicoterapia #clinica #saludmental #formacion",
+      "publicado_en": "2026-10-20T19:59:40-03:00",
+      "media_id": "18096537248444134"
     },
     {
       "id": "reel3-el-caso",
