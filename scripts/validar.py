@@ -9,6 +9,16 @@ Chequea que:
   - el caption no pase de 2200 caracteres ni de 30 hashtags
   - no haya dos posts a menos de 30 minutos uno del otro
   - los estados sean valores validos
+  - no haya malas palabras (bloqueante)
+  - toda cita atribuida a un libro o a una persona quede marcada para
+    verificar a mano
+
+Los dos ultimos chequeos existen por dos errores que llegaron a publicarse:
+cuatro frases inventadas que salieron atribuidas a «Soltar con Mindfulness»,
+y un «al pedo» en el pie de un posteo. Ninguna de las dos cosas la puede
+detectar una relectura apurada, y las dos dañan la reputacion de la cuenta.
+La regla de fondo: NUNCA escribir una cita y atribuirsela a una fuente real
+sin haberla verificado en el texto original.
 
 Uso:
     python scripts/validar.py
@@ -32,6 +42,24 @@ MAX_HASHTAGS = 30
 SEPARACION_MINIMA = timedelta(minutes=30)
 ESTADOS = {"pendiente", "publicado", "error", "vencido", "borrador"}
 TIPOS = {"imagen", "carrusel", "reel"}
+
+# Vulgarismos del rioplatense. Con limites de palabra para no marcar
+# "pedazo" por "pedo" ni "culpa" por "culo".
+MALAS_PALABRAS = re.compile(
+    r"al\s+pedo|en\s+pedo|\bpedos?\b|\bbolud\w*|\bpelotud\w*|\bmierda\w*"
+    r"|\bcarajo\b|\bjode[rn]\b|\bcag\w+|\bput[oa]s?\b|\bforr[oa]s?\b"
+    r"|\bchot[oa]s?\b|\bconch[ao]s?\b|\bverga\b|\bculo\w*|\bpajer\w*"
+    r"|\bgarch\w*|\bpelotas\b|\bhuev[oa]s\b|\bgil\b",
+    re.I,
+)
+
+# Cualquier forma de atribuir una frase a una fuente. No se puede verificar
+# sola: se marca para que una persona la coteje contra el original.
+CITA_ATRIBUIDA = re.compile(
+    r"de\s+«[^»]+»|del\s+libro|autor\s+de|—\s*Christian|seg[uú]n\s+\w+"
+    r"|\bcit[ao]\b|\bescrib[ei]\b.{0,20}\ben\b",
+    re.I,
+)
 
 
 def archivos_de(post: dict) -> list[str]:
@@ -81,6 +109,14 @@ def main() -> int:
             errores.append(f"{pid}: {len(hashtags)} hashtags, el maximo es {MAX_HASHTAGS}")
         if not caption.strip():
             avisos.append(f"{pid}: caption vacio")
+
+        for m in MALAS_PALABRAS.finditer(caption):
+            errores.append(f"{pid}: mala palabra «{m.group(0)}» en el caption")
+        if post.get("estado") == "pendiente":
+            for m in CITA_ATRIBUIDA.finditer(caption):
+                avisos.append(
+                    f"{pid}: dice «{m.group(0)}» — VERIFICA la cita contra el "
+                    "original antes de publicar")
 
         if post.get("tipo") == "reel":
             continue  # los videos no se generan con preparar_imagenes.py
