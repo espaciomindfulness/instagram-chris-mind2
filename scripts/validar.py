@@ -55,9 +55,13 @@ MALAS_PALABRAS = re.compile(
 
 # Cualquier forma de atribuir una frase a una fuente. No se puede verificar
 # sola: se marca para que una persona la coteje contra el original.
+#
+# Se saco «— Christian» y «segun X»: el primero marcaba la firma al pie, que
+# va en todos los posteos, y el segundo cualquier «segun la evidencia». Un
+# aviso que salta siempre es un aviso que se ignora. Lo que queda apunta a lo
+# que fallo de verdad: atribuirle una frase a un libro o a un autor.
 CITA_ATRIBUIDA = re.compile(
-    r"de\s+«[^»]+»|del\s+libro|autor\s+de|—\s*Christian|seg[uú]n\s+\w+"
-    r"|\bcit[ao]\b|\bescrib[ei]\b.{0,20}\ben\b",
+    r"de\s+«[^»]+»|del\s+libro|\bautor\s+de\b|\bcit(?:a|ando)\b",
     re.I,
 )
 

@@ -48,6 +48,72 @@
       "intentos": 1,
       "publicado_en": "2026-10-27T07:15:27-03:00",
       "media_id": "18121127027075550"
+    },
+    {
+      "id": "c1-tres-grietas",
+      "tipo": "carrusel",
+      "estado": "pendiente",
+      "fecha": "2026-11-09",
+      "hora": "19:00",
+      "archivos": [
+        "p1_grietas_1.jpg",
+        "p1_grietas_2.jpg",
+        "p1_grietas_3.jpg",
+        "p1_grietas_4.jpg",
+        "p1_grietas_5.jpg",
+        "p1_grietas_6.jpg"
+      ],
+      "caption": "El diagnóstico describe un conjunto de síntomas. No dice qué los sostiene, ni por dónde intervenir.\n\nY está bien: es una herramienta de comunicación y de clasificación. El problema aparece cuando le pedimos algo que nunca prometió dar — una guía para decidir qué hacer con esta persona, un martes a las seis de la tarde.\n\nTres grietas conocidas del modelo de categorías 👉 deslizá.\n\nLa tercera es la que más me hizo ruido cuando la entendí: terapias de escuelas distintas obtienen resultados parecidos. Algo que tienen en común está haciendo el trabajo, y no es el nombre del modelo.\n\n—\nChristian Arpa · Psicólogo (UBA) · MBSR Teacher (GMC)\nDe la charla «Del diagnóstico al proceso», octubre de 2026.\n\n#psicologia #act #psicoterapia #clinica #mindfulness #saludmental #procesos"
+    },
+    {
+      "id": "c2-seis-dimensiones",
+      "tipo": "carrusel",
+      "estado": "pendiente",
+      "fecha": "2026-11-12",
+      "hora": "19:00",
+      "archivos": [
+        "p2_dim_1.jpg",
+        "p2_dim_2.jpg",
+        "p2_dim_3.jpg",
+        "p2_dim_4.jpg",
+        "p2_dim_5.jpg",
+        "p2_dim_6.jpg",
+        "p2_dim_7.jpg",
+        "p2_dim_8.jpg"
+      ],
+      "caption": "Si la etiqueta no alcanza para decidir qué hacer, ¿dónde se mira?\n\nSeis dimensiones donde vive un proceso: afecto, cognición, atención, self, motivación y conducta 👉 deslizá.\n\nLa que más se saltea es la última. Preguntamos mucho por lo que siente y lo que piensa, y dejamos para el final lo que efectivamente hace y dejó de hacer — que es lo único observable.\n\nY todo atravesado por dos contextos que no se pueden ignorar: el biológico y el sociocultural.\n\nGuardátelo para tenerlo a mano en la próxima formulación.\n\n—\nChristian Arpa · Psicólogo (UBA) · MBSR Teacher (GMC)\nDe la charla «Del diagnóstico al proceso», octubre de 2026.\n\n#psicologia #act #psicoterapia #clinica #mindfulness #saludmental #procesos"
+    },
+    {
+      "id": "c3-formular-caso",
+      "tipo": "carrusel",
+      "estado": "pendiente",
+      "fecha": "2026-11-16",
+      "hora": "19:00",
+      "archivos": [
+        "p3_caso_1.jpg",
+        "p3_caso_2.jpg",
+        "p3_caso_3.jpg",
+        "p3_caso_4.jpg",
+        "p3_caso_5.jpg",
+        "p3_caso_6.jpg",
+        "p3_caso_7.jpg"
+      ],
+      "caption": "Cómo se formula un caso desde procesos, en cinco pasos.\n\nEsto se puede usar el martes que viene sin cambiar de modelo ni abandonar nada de lo que ya sabés hacer 👉 deslizá.\n\nEl segundo paso es el que más rinde: casi siempre hay un alivio a corto plazo que paga el costo a largo plazo. Ese alivio es el que hay que tocar, y casi nunca es el síntoma que trae la persona.\n\nY el quinto es el más incómodo. Si en cuatro o seis sesiones no se movió nada, la primera hipótesis no debería ser que el paciente no colabora.\n\n—\nChristian Arpa · Psicólogo (UBA) · MBSR Teacher (GMC)\nDe la charla «Del diagnóstico al proceso», octubre de 2026.\n\n#psicologia #act #psicoterapia #clinica #mindfulness #saludmental #procesos"
+    },
+    {
+      "id": "c4-tres-preguntas",
+      "tipo": "carrusel",
+      "estado": "pendiente",
+      "fecha": "2026-11-19",
+      "hora": "19:00",
+      "archivos": [
+        "p4_preg_1.jpg",
+        "p4_preg_2.jpg",
+        "p4_preg_3.jpg",
+        "p4_preg_4.jpg",
+        "p4_preg_5.jpg"
+      ],
+      "caption": "Tres preguntas para la próxima primera entrevista. Una por cada proceso 👉 deslizá.\n\nNo reemplazan una evaluación ni hace falta cambiar de modelo para usarlas. Pero cambian lo que escuchás en los primeros veinte minutos, que es cuando se decide casi todo.\n\nLa tercera es la que más me sorprende en sesión: la distancia entre cómo alguien se trata a sí mismo y cómo trataría a un amigo con el mismo problema suele ser enorme, y verla es la puerta de entrada a la compasión.\n\n¿Vos cuál agregarías? Me interesa leerlo 👇\n\n—\nChristian Arpa · Psicólogo (UBA) · MBSR Teacher (GMC)\nDe la charla «Del diagnóstico al proceso», octubre de 2026.\n\n#psicologia #act #psicoterapia #clinica #mindfulness #saludmental #procesos"
     }
   ]
 }
