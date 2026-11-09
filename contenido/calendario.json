@@ -52,7 +52,7 @@
     {
       "id": "c1-tres-grietas",
       "tipo": "carrusel",
-      "estado": "pendiente",
+      "estado": "publicado",
       "fecha": "2026-11-09",
       "hora": "19:00",
       "archivos": [
@@ -63,7 +63,9 @@
         "p1_grietas_5.jpg",
         "p1_grietas_6.jpg"
       ],
-      "caption": "El diagnóstico describe un conjunto de síntomas. No dice qué los sostiene, ni por dónde intervenir.\n\nY está bien: es una herramienta de comunicación y de clasificación. El problema aparece cuando le pedimos algo que nunca prometió dar — una guía para decidir qué hacer con esta persona, un martes a las seis de la tarde.\n\nTres grietas conocidas del modelo de categorías 👉 deslizá.\n\nLa tercera es la que más me hizo ruido cuando la entendí: terapias de escuelas distintas obtienen resultados parecidos. Algo que tienen en común está haciendo el trabajo, y no es el nombre del modelo.\n\n—\nChristian Arpa · Psicólogo (UBA) · MBSR Teacher (GMC)\nDe la charla «Del diagnóstico al proceso», octubre de 2026.\n\n#psicologia #act #psicoterapia #clinica #mindfulness #saludmental #procesos"
+      "caption": "El diagnóstico describe un conjunto de síntomas. No dice qué los sostiene, ni por dónde intervenir.\n\nY está bien: es una herramienta de comunicación y de clasificación. El problema aparece cuando le pedimos algo que nunca prometió dar — una guía para decidir qué hacer con esta persona, un martes a las seis de la tarde.\n\nTres grietas conocidas del modelo de categorías 👉 deslizá.\n\nLa tercera es la que más me hizo ruido cuando la entendí: terapias de escuelas distintas obtienen resultados parecidos. Algo que tienen en común está haciendo el trabajo, y no es el nombre del modelo.\n\n—\nChristian Arpa · Psicólogo (UBA) · MBSR Teacher (GMC)\nDe la charla «Del diagnóstico al proceso», octubre de 2026.\n\n#psicologia #act #psicoterapia #clinica #mindfulness #saludmental #procesos",
+      "publicado_en": "2026-11-09T20:30:24-03:00",
+      "media_id": "18083353682341485"
     },
     {
       "id": "c2-seis-dimensiones",
