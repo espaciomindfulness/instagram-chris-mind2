@@ -87,11 +87,13 @@
     {
       "id": "historia-encuentro",
       "tipo": "historia",
-      "estado": "pendiente",
+      "estado": "publicado",
       "fecha": "2026-11-12",
       "hora": "19:11",
       "archivo": "historia_encuentro.jpg",
-      "caption": ""
+      "caption": "",
+      "publicado_en": "2026-11-12T19:16:30-03:00",
+      "media_id": "18101954024419234"
     },
     {
       "id": "c2-seis-dimensiones",
