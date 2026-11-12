@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
-"""Programa el carrusel de OSF en @chris.mind2 para el 14/11 a las 19:00.
+"""Programa el carrusel de OSF en @chris.mind2 para el 12/11 a las 19:00.
 
-Va dos dias despues del colaborativo del encuentro (12/11) y dos antes del
-carrusel de formular un caso (16/11). Asi la noticia y el recurso salen
-cerca, pero sin pisarse el mismo dia.
+Sale el mismo dia que el colaborativo del encuentro: la noticia y el recurso
+juntos pegan mas que separados, y una noticia pierde valor cada dia que pasa.
+El carrusel de las seis dimensiones se corrio al 14 para no amontonar.
 """
 import json
 from pathlib import Path
@@ -47,11 +47,11 @@ def main():
         return
     d["posts"].append(dict(
         id="c5-osf-curriculum", tipo="carrusel", estado="pendiente",
-        fecha="2026-11-14", hora="19:00", archivos=archivos, caption=CAPTION))
+        fecha="2026-11-12", hora="19:00", archivos=archivos, caption=CAPTION))
     d["posts"].sort(key=lambda p: (p["fecha"], p["hora"]))
     open(RUTA, "w", encoding="utf-8").write(
         json.dumps(d, ensure_ascii=False, indent=2) + "\n")
-    print(f"programado 14/11 19:00 | caption {len(CAPTION)} de 2200")
+    print(f"programado 12/11 19:00 | caption {len(CAPTION)} de 2200")
     for p in d["posts"]:
         if p["estado"] == "pendiente":
             print(f"  {p['fecha']} {p['hora']}  {p['id']}")

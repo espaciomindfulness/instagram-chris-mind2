@@ -68,10 +68,25 @@
       "media_id": "18083353682341485"
     },
     {
-      "id": "c2-seis-dimensiones",
+      "id": "c5-osf-curriculum",
       "tipo": "carrusel",
       "estado": "pendiente",
       "fecha": "2026-11-12",
+      "hora": "19:00",
+      "archivos": [
+        "p5_osf_1.jpg",
+        "p5_osf_2.jpg",
+        "p5_osf_3.jpg",
+        "p5_osf_4.jpg",
+        "p5_osf_5.jpg"
+      ],
+      "caption": "El currículum completo del MBSR es público y casi nadie lo sabe.\n\nDoscientas treinta y dos páginas, gratis, sin registro y sin pago. Está en OSF desde octubre 👉 deslizá.\n\nNo es un resumen ni un índice: están las ocho clases una por una, la jornada de práctica intensiva y ocho apéndices, incluidos el espíritu de la enseñanza y cómo darlo online. También el currículum original de 1993, para comparar.\n\nLa edición 2026 la publicaron Brown University School of Professional Studies y el Global Mindfulness Collaborative, con revisiones directas de Jon Kabat-Zinn.\n\nLo comparto por una razón concreta: en mindfulness no hay matrícula ni colegio que regule. Que el currículum sea público significa que cualquiera —alumno o colega— puede leer qué es el MBSR y compararlo con lo que le están dando. Eso es raro y es bueno.\n\nEstá en osf.io/tckb3\n\n—\nChristian Arpa · Psicólogo (UBA) · MBSR Teacher calificado por el GMC\n\n#MBSR #mindfulness #psicologia #psicoterapia #formacion #saludmental #JonKabatZinn #atenciónplena"
+    },
+    {
+      "id": "c2-seis-dimensiones",
+      "tipo": "carrusel",
+      "estado": "pendiente",
+      "fecha": "2026-11-14",
       "hora": "19:00",
       "archivos": [
         "p2_dim_1.jpg",
@@ -84,21 +99,6 @@
         "p2_dim_8.jpg"
       ],
       "caption": "Si la etiqueta no alcanza para decidir qué hacer, ¿dónde se mira?\n\nSeis dimensiones donde vive un proceso: afecto, cognición, atención, self, motivación y conducta 👉 deslizá.\n\nLa que más se saltea es la última. Preguntamos mucho por lo que siente y lo que piensa, y dejamos para el final lo que efectivamente hace y dejó de hacer — que es lo único observable.\n\nY todo atravesado por dos contextos que no se pueden ignorar: el biológico y el sociocultural.\n\nGuardátelo para tenerlo a mano en la próxima formulación.\n\n—\nChristian Arpa · Psicólogo (UBA) · MBSR Teacher (GMC)\nDe la charla «Del diagnóstico al proceso», octubre de 2026.\n\n#psicologia #act #psicoterapia #clinica #mindfulness #saludmental #procesos"
-    },
-    {
-      "id": "c5-osf-curriculum",
-      "tipo": "carrusel",
-      "estado": "pendiente",
-      "fecha": "2026-11-14",
-      "hora": "19:00",
-      "archivos": [
-        "p5_osf_1.jpg",
-        "p5_osf_2.jpg",
-        "p5_osf_3.jpg",
-        "p5_osf_4.jpg",
-        "p5_osf_5.jpg"
-      ],
-      "caption": "El currículum completo del MBSR es público y casi nadie lo sabe.\n\nDoscientas treinta y dos páginas, gratis, sin registro y sin pago. Está en OSF desde octubre 👉 deslizá.\n\nNo es un resumen ni un índice: están las ocho clases una por una, la jornada de práctica intensiva y ocho apéndices, incluidos el espíritu de la enseñanza y cómo darlo online. También el currículum original de 1993, para comparar.\n\nLa edición 2026 la publicaron Brown University School of Professional Studies y el Global Mindfulness Collaborative, con revisiones directas de Jon Kabat-Zinn.\n\nLo comparto por una razón concreta: en mindfulness no hay matrícula ni colegio que regule. Que el currículum sea público significa que cualquiera —alumno o colega— puede leer qué es el MBSR y compararlo con lo que le están dando. Eso es raro y es bueno.\n\nEstá en osf.io/tckb3\n\n—\nChristian Arpa · Psicólogo (UBA) · MBSR Teacher calificado por el GMC\n\n#MBSR #mindfulness #psicologia #psicoterapia #formacion #saludmental #JonKabatZinn #atenciónplena"
     },
     {
       "id": "c3-formular-caso",
