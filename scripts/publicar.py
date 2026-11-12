@@ -151,15 +151,39 @@ def publicar_contenedor(contenedor_id: str, reintentos: int = 5, espera: int = 1
     raise ErrorAPI(f"El contenedor nunca quedo listo para publicar: {ultimo}")
 
 
+def colaboradores_de(post: dict) -> dict:
+    """El parametro `collaborators`, si el post pide publicar en colaboracion.
+
+    Un posteo colaborativo sale en el feed de las dos cuentas, firmado por las
+    dos, y suma las interacciones de ambas. Es la forma mas directa de que los
+    seguidores de @espaciomindfulness vean contenido de @chris.mind2.
+
+    Meta lo documenta sobre graph.facebook.com y nosotros publicamos por
+    graph.instagram.com, que es otra variante. Se probo el 28/10/2026 con
+    scripts/probar_colaboracion.py y esta API lo acepta.
+
+    La otra cuenta recibe una invitacion y el posteo aparece en su perfil
+    recien cuando la acepta. Hasta entonces sale solo en la que publica.
+
+    En el calendario: "colaboradores": ["chris.mind2"]. Hasta tres.
+    """
+    cuentas = post.get("colaboradores") or []
+    if not cuentas:
+        return {}
+    return {"collaborators": ",".join(c.lstrip("@") for c in cuentas[:3])}
+
+
 def publicar_post(post: dict) -> str:
     """Publica un post segun su tipo. Devuelve el media_id de Instagram."""
     tipo = post.get("tipo", "imagen")
     caption = post.get("caption", "")
+    colab = colaboradores_de(post)
 
     if tipo == "imagen":
         contenedor = crear_contenedor({
             "image_url": url_publica(post["archivo"]),
             "caption": caption,
+            **colab,
         })
         esperar_procesamiento(contenedor, max_segundos=180, intervalo=5)
 
@@ -175,10 +199,12 @@ def publicar_post(post: dict) -> str:
         # contenedores con is_carousel_item y una respuesta de error ahi tiraba
         # abajo la publicacion entera. Alcanza con esperar al contenedor padre.
         time.sleep(5)
+        # Los colaboradores van en el contenedor padre, nunca en las hijas.
         contenedor = crear_contenedor({
             "media_type": "CAROUSEL",
             "children": ",".join(hijos),
             "caption": caption,
+            **colab,
         })
         esperar_procesamiento(contenedor, max_segundos=300, intervalo=5)
 
@@ -188,6 +214,7 @@ def publicar_post(post: dict) -> str:
             "video_url": url_publica(post["archivo"]),
             "caption": caption,
             "share_to_feed": "true" if post.get("compartir_en_feed", True) else "false",
+            **colab,
         }
         if post.get("portada"):
             params["cover_url"] = url_publica(post["portada"])
