@@ -2,9 +2,22 @@ name: Publicar en Instagram
 
 on:
   schedule:
-    # Corre cada 30 minutos. El script decide si hay algo que publicar
-    # segun contenido/calendario.json (hora de Argentina).
+    # Pide correr cada 30 minutos, pero GitHub estrangula los workflows
+    # programados de los repos con poca actividad: en noviembre de 2026 se
+    # estaba disparando cada OCHO horas. No se puede confiar en el cron para
+    # que algo salga a una hora pensada.
     - cron: "*/30 * * * *"
+
+  # Por eso tambien corre cuando cambia el calendario. Programar algo ya
+  # vencido lo publica en el momento, sin depender del cron ni de que alguien
+  # pueda entrar a GitHub a apretar el boton.
+  #
+  # No entra en bucle: el bot commitea el estado con "[skip ci]", que GitHub
+  # respeta, asi que su propio commit no vuelve a disparar el workflow.
+  push:
+    paths:
+      - "contenido/calendario.json"
+
   workflow_dispatch:
     inputs:
       simulacro:
