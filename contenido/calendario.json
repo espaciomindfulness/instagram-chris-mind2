@@ -85,6 +85,15 @@
       "media_id": "18037650542665710"
     },
     {
+      "id": "historia-encuentro",
+      "tipo": "historia",
+      "estado": "pendiente",
+      "fecha": "2026-11-12",
+      "hora": "19:11",
+      "archivo": "historia_encuentro.jpg",
+      "caption": ""
+    },
+    {
       "id": "c2-seis-dimensiones",
       "tipo": "carrusel",
       "estado": "pendiente",

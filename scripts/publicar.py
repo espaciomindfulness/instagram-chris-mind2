@@ -208,6 +208,16 @@ def publicar_post(post: dict) -> str:
         })
         esperar_procesamiento(contenedor, max_segundos=300, intervalo=5)
 
+    elif tipo == "historia":
+        # Las historias no llevan pie ni colaboradores, y duran 24 h.
+        # La API tampoco permite ponerles stickers: un enlace clickeable hay
+        # que agregarlo a mano desde el celular al momento de subirla.
+        contenedor = crear_contenedor({
+            "media_type": "STORIES",
+            "image_url": url_publica(post["archivo"]),
+        })
+        esperar_procesamiento(contenedor, max_segundos=180, intervalo=5)
+
     elif tipo == "reel":
         params = {
             "media_type": "REELS",

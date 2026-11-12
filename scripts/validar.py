@@ -41,7 +41,7 @@ MAX_CAPTION = 2200
 MAX_HASHTAGS = 30
 SEPARACION_MINIMA = timedelta(minutes=30)
 ESTADOS = {"pendiente", "publicado", "error", "vencido", "borrador"}
-TIPOS = {"imagen", "carrusel", "reel"}
+TIPOS = {"imagen", "carrusel", "reel", "historia"}
 
 # Vulgarismos del rioplatense. Con limites de palabra para no marcar
 # "pedazo" por "pedo" ni "culpa" por "culo".
