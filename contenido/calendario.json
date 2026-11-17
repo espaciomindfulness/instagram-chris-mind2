@@ -118,7 +118,7 @@
     {
       "id": "c3-formular-caso",
       "tipo": "carrusel",
-      "estado": "pendiente",
+      "estado": "publicado",
       "fecha": "2026-11-16",
       "hora": "19:00",
       "archivos": [
@@ -130,7 +130,9 @@
         "p3_caso_6.jpg",
         "p3_caso_7.jpg"
       ],
-      "caption": "Cómo se formula un caso desde procesos, en cinco pasos.\n\nEsto se puede usar el martes que viene sin cambiar de modelo ni abandonar nada de lo que ya sabés hacer 👉 deslizá.\n\nEl segundo paso es el que más rinde: casi siempre hay un alivio a corto plazo que paga el costo a largo plazo. Ese alivio es el que hay que tocar, y casi nunca es el síntoma que trae la persona.\n\nY el quinto es el más incómodo. Si en cuatro o seis sesiones no se movió nada, la primera hipótesis no debería ser que el paciente no colabora.\n\n—\nChristian Arpa · Psicólogo (UBA) · MBSR Teacher (GMC)\nDe la charla «Del diagnóstico al proceso», octubre de 2026.\n\n#psicologia #act #psicoterapia #clinica #mindfulness #saludmental #procesos"
+      "caption": "Cómo se formula un caso desde procesos, en cinco pasos.\n\nEsto se puede usar el martes que viene sin cambiar de modelo ni abandonar nada de lo que ya sabés hacer 👉 deslizá.\n\nEl segundo paso es el que más rinde: casi siempre hay un alivio a corto plazo que paga el costo a largo plazo. Ese alivio es el que hay que tocar, y casi nunca es el síntoma que trae la persona.\n\nY el quinto es el más incómodo. Si en cuatro o seis sesiones no se movió nada, la primera hipótesis no debería ser que el paciente no colabora.\n\n—\nChristian Arpa · Psicólogo (UBA) · MBSR Teacher (GMC)\nDe la charla «Del diagnóstico al proceso», octubre de 2026.\n\n#psicologia #act #psicoterapia #clinica #mindfulness #saludmental #procesos",
+      "publicado_en": "2026-11-16T22:57:29-03:00",
+      "media_id": "17925012969450288"
     },
     {
       "id": "c4-tres-preguntas",
