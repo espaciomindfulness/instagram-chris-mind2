@@ -137,7 +137,7 @@
     {
       "id": "reel-poema-callo",
       "tipo": "reel",
-      "estado": "pendiente",
+      "estado": "publicado",
       "fecha": "2026-11-17",
       "hora": "14:58",
       "archivo": "reel_poema.mp4",
@@ -145,7 +145,9 @@
       "colaboradores": [
         "espaciomindfulness"
       ],
-      "caption": "Lo escribí una mañana, pensando en una práctica que iba a guiar un rato después.\n\nNo habla de meditar. Habla de lo que aparece cuando uno deja de corregir lo que escucha: el ruido de afuera, el cuerpo que se acomoda, y más adentro algo que no hace ruido y que no es vacío.\n\nUn lugar donde lo que duele entra sin pelear, como un huésped que llegó cansado.\n\nGracias a @acbs_argentina por el espacio donde se leyó por primera vez.\n\n🌿 Christian D. Arpa · Psicólogo (UBA) · MBSR Teacher (GMC)\n\n#mindfulness #poesia #atencionplena #silencio #meditacion"
+      "caption": "Lo escribí una mañana, pensando en una práctica que iba a guiar un rato después.\n\nNo habla de meditar. Habla de lo que aparece cuando uno deja de corregir lo que escucha: el ruido de afuera, el cuerpo que se acomoda, y más adentro algo que no hace ruido y que no es vacío.\n\nUn lugar donde lo que duele entra sin pelear, como un huésped que llegó cansado.\n\nGracias a @acbs_argentina por el espacio donde se leyó por primera vez.\n\n🌿 Christian D. Arpa · Psicólogo (UBA) · MBSR Teacher (GMC)\n\n#mindfulness #poesia #atencionplena #silencio #meditacion",
+      "publicado_en": "2026-11-17T14:58:13-03:00",
+      "media_id": "17969513481207993"
     },
     {
       "id": "c4-tres-preguntas",
