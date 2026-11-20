@@ -152,7 +152,7 @@
     {
       "id": "c4-tres-preguntas",
       "tipo": "carrusel",
-      "estado": "pendiente",
+      "estado": "publicado",
       "fecha": "2026-11-19",
       "hora": "19:00",
       "archivos": [
@@ -162,7 +162,9 @@
         "p4_preg_4.jpg",
         "p4_preg_5.jpg"
       ],
-      "caption": "Tres preguntas para la próxima primera entrevista. Una por cada proceso 👉 deslizá.\n\nNo reemplazan una evaluación ni hace falta cambiar de modelo para usarlas. Pero cambian lo que escuchás en los primeros veinte minutos, que es cuando se decide casi todo.\n\nLa tercera es la que más me sorprende en sesión: la distancia entre cómo alguien se trata a sí mismo y cómo trataría a un amigo con el mismo problema suele ser enorme, y verla es la puerta de entrada a la compasión.\n\n¿Vos cuál agregarías? Me interesa leerlo 👇\n\n—\nChristian Arpa · Psicólogo (UBA) · MBSR Teacher (GMC)\nDe la charla «Del diagnóstico al proceso», octubre de 2026.\n\n#psicologia #act #psicoterapia #clinica #mindfulness #saludmental #procesos"
+      "caption": "Tres preguntas para la próxima primera entrevista. Una por cada proceso 👉 deslizá.\n\nNo reemplazan una evaluación ni hace falta cambiar de modelo para usarlas. Pero cambian lo que escuchás en los primeros veinte minutos, que es cuando se decide casi todo.\n\nLa tercera es la que más me sorprende en sesión: la distancia entre cómo alguien se trata a sí mismo y cómo trataría a un amigo con el mismo problema suele ser enorme, y verla es la puerta de entrada a la compasión.\n\n¿Vos cuál agregarías? Me interesa leerlo 👇\n\n—\nChristian Arpa · Psicólogo (UBA) · MBSR Teacher (GMC)\nDe la charla «Del diagnóstico al proceso», octubre de 2026.\n\n#psicologia #act #psicoterapia #clinica #mindfulness #saludmental #procesos",
+      "publicado_en": "2026-11-19T22:04:53-03:00",
+      "media_id": "17905343847375781"
     }
   ]
 }
