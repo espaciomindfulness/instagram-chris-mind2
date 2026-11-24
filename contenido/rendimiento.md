@@ -1,15 +1,18 @@
 # Rendimiento de @chris.mind2
 
-Medido el 16/11/2026 a las 19:22. 516 seguidores al momento de medir.
+Medido el 23/11/2026 a las 21:06. 517 seguidores al momento de medir.
 
 `% base` es el alcance como porcentaje de tus seguidores. Por debajo de 100% la publicacion ni siquiera llego a toda tu gente; muy por encima, Instagram la mostro a desconocidos.
 
 | Fecha | Tipo | Publicacion | Alcance | % base | Guard. | Comp. | Interac. | Segs. |
 |---|---|---|---:|---:|---:|---:|---:|---:|
-| 2026-11-14 | imagen | Un instante de paz plena | 143 | 28% | 0 | 1 | 16 | 0 |
-| 2026-11-09 | carrusel | El diagnóstico describe un conjunto de síntoma… | 69 | 13% | 0 | 0 | 7 | 0 |
-| 2026-10-27 | reel | Un caso concreto, para que no quede en teoría. | 150 | 29% | 0 | 0 | 6 | 0 |
-| 2026-10-20 | reel | Diagnóstico y después el protocolo que le corr… | 172 | 33% | 1 | 1 | 9 | 0 |
+| 2026-11-20 | carrusel | Tres preguntas para la próxima primera entrevi… | 73 | 14% | 3 | 0 | 8 | 1 |
+| 2026-11-17 | reel | Lo escribí una mañana, pensando en una práctic… | 128 | 25% | 2 | 2 | 15 | 0 |
+| 2026-11-17 | carrusel | Cómo se formula un caso desde procesos, en cin… | 52 | 10% | 0 | 0 | 4 | 0 |
+| 2026-11-14 | imagen | Un instante de paz plena | 162 | 31% | 0 | 1 | 16 | 0 |
+| 2026-11-09 | carrusel | El diagnóstico describe un conjunto de síntoma… | 73 | 14% | 0 | 0 | 7 | 0 |
+| 2026-10-27 | reel | Un caso concreto, para que no quede en teoría. | 152 | 29% | 0 | 0 | 6 | 0 |
+| 2026-10-20 | reel | Diagnóstico y después el protocolo que le corr… | 174 | 34% | 1 | 1 | 9 | 0 |
 | 2026-10-17 | imagen | Doy una charla abierta y gratuita para colegas… | 140 | 27% | 0 | 1 | 6 | 0 |
 | 2026-10-14 | reel | Creo que el problema no son las técnicas. Es q… | 130 | 25% | 0 | 0 | 6 | 0 |
 | 2026-10-13 | reel | Feliz dia del Psicólogo/a | 188 | 36% | 0 | 0 | 23 | 0 |
@@ -23,36 +26,26 @@ Medido el 16/11/2026 a las 19:22. 516 seguidores al momento de medir.
 | 2026-06-14 | reel | Diplomatura Psicoterapia basada en procesos | 194 | 38% | 2 | 0 | 15 | 0 |
 | 2026-04-23 | carrusel | Llevando Mindfulness.  Apsa 2026 | 211 | 41% | 1 | 0 | 34 | 0 |
 | 2026-04-17 | imagen | Estas listo/a? Solo por youtube: Espacio Mindf… | 169 | 33% | 1 | 0 | 15 | 0 |
-| 2026-04-01 | imagen | Modo formal Mindfulness. Un dia como hoy hace … | 183 | 35% | 0 | 0 | 16 | 0 |
-| 2026-03-25 | imagen | Un gran agradecimiento a Martin y Jose (@marti… | 522 | 101% | 0 | 2 | 13 | 0 |
-| 2026-03-23 | reel | Los esperamos para formarlos en intervenciones… | 176 | 34% | 0 | 2 | 6 | 0 |
 
 ## Resumen
 
-- Alcance promedio: **185** cuentas (36% de tu base).
-- Seguidores ganados en estas 20 publicaciones: **2**.
+- Alcance promedio: **155** cuentas (30% de tu base).
+- Seguidores ganados en estas 20 publicaciones: **3**.
 
 Alcance promedio por formato:
 
-- **imagen**: 208 (8 publicaciones)
-- **reel**: 174 (9 publicaciones)
-- **carrusel**: 156 (3 publicaciones)
+- **reel**: 169 (9 publicaciones)
+- **imagen**: 164 (6 publicaciones)
+- **carrusel**: 119 (5 publicaciones)
 
-La que mas lejos llego: «Un gran agradecimiento a Martin y Jose (@marti…» (imagen, 522 cuentas).
+La que mas lejos llego: «Cada persona es un mundo, y hay que valorar la…» (reel, 272 cuentas).
 
 ## Seguidores dia por dia
 
-Ultimos 29 dias: **+15** neto, 12 dias en alza y 0 en baja.
+Ultimos 29 dias: **+17** neto, 14 dias en alza y 0 en baja.
 
 | Dia | Neto |
 |---|---:|
-| 2026-10-19 | +0 |
-| 2026-10-20 | +1 |
-| 2026-10-21 | +0 |
-| 2026-10-22 | +1 |
-| 2026-10-23 | +0 |
-| 2026-10-24 | +0 |
-| 2026-10-25 | +0 |
 | 2026-10-26 | +0 |
 | 2026-10-27 | +0 |
 | 2026-10-28 | +3 |
@@ -75,3 +68,10 @@ Ultimos 29 dias: **+15** neto, 12 dias en alza y 0 en baja.
 | 2026-11-14 | +0 |
 | 2026-11-15 | +1 |
 | 2026-11-16 | +0 |
+| 2026-11-17 | +0 |
+| 2026-11-18 | +0 |
+| 2026-11-19 | +1 |
+| 2026-11-20 | +1 |
+| 2026-11-21 | +1 |
+| 2026-11-22 | +1 |
+| 2026-11-23 | +0 |
